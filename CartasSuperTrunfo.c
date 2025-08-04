@@ -61,7 +61,7 @@ int main() {
     printf ("Ponto turisticos 02:\\n");
     scanf ("%d", &pontoturistico2);
 
-    printf("Dados da carta 01:");
+    printf("Dados da carta:");
 
     printf ("Estado 01: %s");
     printf ("Código 01: %d");
