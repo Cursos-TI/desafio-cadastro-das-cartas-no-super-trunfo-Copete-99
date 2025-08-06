@@ -71,6 +71,16 @@ int main() {
     printf ("PIB 01: %f \n", PIB1);
     printf ("Ponto turistico 01: %d \n", pontoturistico1);
 
+    printf("\n --- Dados da carta: ---\n");
+    
+    printf ("Estado 01: %s \n", estado2);
+    printf ("Código 01: %d \n", codigo2);
+    printf ("Cidade 01: %s\n", cidade2);
+    printf ("População 01: %d \n", populacao2);
+    printf ("Area 01: %f \n", area2);
+    printf ("PIB 01: %f \n", PIB2);
+    printf ("Ponto turistico 01: %d \n", pontoturistico2);
+
     
     
     
