@@ -27,10 +27,10 @@ int main() {
     scanf ("%s",estado2);
     
     printf ("Codigo 01:\n");
-    scanf ("%s", &codigo1);
+    scanf ("%s", codigo1);
     
     printf ("Codigo 02:\n");
-    scanf ("%s", &codigo2);
+    scanf ("%s", codigo2);
     
     printf ("Nome da cidade 01:\n");
     scanf ("%s",cidade1);
@@ -68,8 +68,8 @@ int main() {
     printf ("Código 01: %s \n", codigo1);
     printf ("Cidade 01: %s\n", cidade1);
     printf ("População 01: %d \n", populacao1);
-    printf ("Area 01: %f \n", area1);
-    printf ("PIB 01: %f \n", PIB1);
+    printf ("Area 01: %2.f \n", area1);
+    printf ("PIB 01: %2.f \n", PIB1);
     printf ("Ponto turistico 01: %d \n", pontoturistico1);
   
 
@@ -79,8 +79,8 @@ int main() {
     printf ("Código 02: %s \n", codigo2);
     printf ("Cidade 02: %s\n", cidade2);
     printf ("População 02: %d \n", populacao2);
-    printf ("Area 02: %f \n", area2);
-    printf ("PIB 02: %f \n", PIB2);
+    printf ("Area 02: %2.f \n", area2);
+    printf ("PIB 02: %2.f \n", PIB2);
     printf ("Ponto turistico 02: %d \n", pontoturistico2);
   
 
