@@ -14,10 +14,9 @@ int main() {
     float area2;
     char estado1[10];
     char estado2[10];
-    int codigo1;
-    int codigo2;
-    float densidadepop;
-    float pibperca;
+    char codigo1 [4];
+    char codigo2 [4];
+    
     
     printf ("Desafio Super Trunfo!\n ");
     
@@ -28,10 +27,10 @@ int main() {
     scanf ("%s",estado2);
     
     printf ("Codigo 01:\n");
-    scanf ("%d", &codigo1);
+    scanf ("%s", &codigo1);
     
     printf ("Codigo 02:\n");
-    scanf ("%d", &codigo2);
+    scanf ("%s", &codigo2);
     
     printf ("Nome da cidade 01:\n");
     scanf ("%s",cidade1);
@@ -66,26 +65,24 @@ int main() {
     printf("\n --- Dados da carta: ---\n");
     
     printf ("Estado 01: %s \n", estado1);
-    printf ("Código 01: %d \n", codigo1);
+    printf ("Código 01: %s \n", codigo1);
     printf ("Cidade 01: %s\n", cidade1);
     printf ("População 01: %d \n", populacao1);
     printf ("Area 01: %f \n", area1);
     printf ("PIB 01: %f \n", PIB1);
     printf ("Ponto turistico 01: %d \n", pontoturistico1);
-    printf ("Densidade populacional: %2.f \n", densidadepop);
-    printf ("PIB per capita: %2.f \n", pibperca);
+  
 
     printf("\n --- Dados da carta: ---\n");
     
     printf ("Estado 02: %s \n", estado2);
-    printf ("Código 02: %d \n", codigo2);
+    printf ("Código 02: %s \n", codigo2);
     printf ("Cidade 02: %s\n", cidade2);
     printf ("População 02: %d \n", populacao2);
     printf ("Area 02: %f \n", area2);
     printf ("PIB 02: %f \n", PIB2);
     printf ("Ponto turistico 02: %d \n", pontoturistico2);
-    printf ("Densidade populacional: %2.f \n", densidadepop);
-    printf ("PIB per capita: %2.f \n", pibperca);
+  
 
     
     
