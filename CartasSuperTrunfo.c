@@ -7,7 +7,7 @@ int main() {
     float PIB1, PIB2;
     float densidade1, densidade2;
     float percapita1, percapita2;
-    float populacao1, populacao2;
+    unsigned long int populacao1, populacao2;
     int pontoturistico1, pontoturistico2;
     float area1, area2;
     char estado1[10];
@@ -37,10 +37,10 @@ int main() {
     scanf ("%s",cidade2);
     
     printf ("População 01:\n");
-    scanf ("%d",&populacao1);
+    scanf ("%lu",&populacao1);
 
     printf ("População 02:\n");
-    scanf ("%d",&populacao2);
+    scanf ("%lu",&populacao2);
 
     printf ("Area 01:\n");
     scanf ("%f", &area1);
@@ -60,10 +60,10 @@ int main() {
     printf ("Ponto turisticos 02:\n");
     scanf ("%d", &pontoturistico2);
     
-    densidade1 = populacao1 / area1;
-    densidade2 = populacao2 / area2;
-    percapita1 = PIB1 / populacao1;
-    percapita2 = PIB2  / populacao2;
+    densidade1 = (float) populacao1 / area1;
+    densidade2 =  (float) populacao2 / area2;
+    percapita1 = PIB1 / (float) populacao1;
+    percapita2 = PIB2  / (float) populacao2;
 
     superpoder1 = populacao1
                 + area1
@@ -89,7 +89,7 @@ int main() {
     printf ("Estado 01: %s \n", estado1);
     printf ("Código 01: %s \n", codigo1);
     printf ("Cidade 01: %s\n", cidade1);
-    printf ("População 01: %d \n", populacao1);
+    printf ("População 01: %lu \n", populacao1);
     printf ("Area 01: %2.f km²\n", area1);
     printf ("PIB 01: %2.f bilhoes\n", PIB1);
     printf ("Ponto turistico 01: %d \n", pontoturistico1);
@@ -102,7 +102,7 @@ int main() {
     printf ("Estado 02: %s \n", estado2);
     printf ("Código 02: %s \n", codigo2);
     printf ("Cidade 02: %s\n", cidade2);
-    printf ("População 02: %d \n", populacao2);
+    printf ("População 02: %lu \n", populacao2);
     printf ("Area 02: %2.f km²\n", area2);
     printf ("PIB 02: %2.f bilhoes\n", PIB2);
     printf ("Ponto turistico 02: %d \n", pontoturistico2);
@@ -113,7 +113,7 @@ int main() {
     printf("Cidade 2: %s | Super Poder: %.2f\n", cidade2, superpoder2);
 
     printf("\nComparacao de Cartas:\n");
-    printf("Populacao: Carta %d venceu (%d)\n", compararMaior(carta1.populacao, carta2.populacao) ? 1 : 2,
+    printf("Populacao: Carta %lu venceu (%lu)\n", compararMaior(carta1.populacao, carta2.populacao) ? 1 : 2,
            compararMaior(carta1.populacao, carta2.populacao));
     printf("Area: Carta %d venceu (%d)\n", compararMaior(carta1.area, carta2.area) ? 1 : 2,
            compararMaior(carta1.area, carta2.area));
