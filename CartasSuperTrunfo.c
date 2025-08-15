@@ -72,26 +72,9 @@ int main() {
     percapita1 = (PIB1 * 1e9f)/ (float) populacao1;
     percapita2 = (PIB2 * 1e9f) / (float) populacao2;
 
-    //calculos super poder
-    superpoder1 = (float) populacao1
-                + area1
-                + PIB1
-                + (float) pontoturistico1
-                + percapita1
-                + (1.0f / densidade1);
-
-     superpoder2 = (float) populacao2
-                + area2
-                + PIB2
-                + (float) pontoturistico2
-                + percapita2
-                + (1.0f / densidade2);
-
-       
-
     
-
-     printf("\n --- Dados da carta: ---\n");
+    //dados das cartas
+    printf("\n --- Dados da carta: ---\n");
     
     printf ("Estado 01: %s \n", estado1);
     printf ("Código 01: %s \n", codigo1);
