@@ -105,6 +105,9 @@ int main() {
     printf ("PIB percapita é: %.2f reais\n", percapita2);
 
    
+ 
+       printf("******\n Super poder \n*******");
+ 
     // resultado super poder
     printf("Superpoder Carta 1: %d\n", superpoder1);
     printf("Superpoder Carta 2: %d\n", superpoder2);
