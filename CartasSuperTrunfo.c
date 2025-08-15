@@ -43,10 +43,10 @@ int main() {
     scanf ("%s",cidade2);
     
     printf ("População 01:\n");
-    scanf ("%llu",&populacao1);
+    scanf ("%lu",&populacao1);
 
     printf ("População 02:\n");
-    scanf ("%llu",&populacao2);
+    scanf ("%lu",&populacao2);
 
     printf ("Area 01:\n");
     scanf ("%f", &area1);
@@ -82,7 +82,7 @@ int main() {
 
      superpoder2 = (float) populacao2
                 + area2
-                + PIB1
+                + PIB2
                 + (float) pontoturistico2
                 + percapita2
                 + (1.0f / densidade2);
@@ -96,12 +96,12 @@ int main() {
     printf ("Estado 01: %s \n", estado1);
     printf ("Código 01: %s \n", codigo1);
     printf ("Cidade 01: %s\n", cidade1);
-    printf ("População 01: %llu \n", populacao1);
-    printf ("Area 01: %2.f km²\n", area1);
-    printf ("PIB 01: %2.f bilhoes\n", PIB1);
+    printf ("População 01: %lu \n", populacao1);
+    printf ("Area 01: %.2f km²\n", area1);
+    printf ("PIB 01: %.2f bilhoes\n", PIB1);
     printf ("Ponto turistico 01: %d \n", pontoturistico1);
-    printf("Densidade populaciona é: %2.f hab/km \n ", densidade1 );
-    printf ("PIB percapita é: %2.f reais\n", percapita1);
+    printf("Densidade populaciona é: %.2f hab/km \n ", densidade1 );
+    printf ("PIB percapita é: %.2f reais\n", percapita1);
   
 
     printf("\n --- Dados da carta: ---\n");
@@ -109,12 +109,12 @@ int main() {
     printf ("Estado 02: %s \n", estado2);
     printf ("Código 02: %s \n", codigo2);
     printf ("Cidade 02: %s\n", cidade2);
-    printf ("População 02: %llu \n", populacao2);
-    printf ("Area 02: %2.f km²\n", area2);
-    printf ("PIB 02: %2.f bilhoes\n", PIB2);
+    printf ("População 02: %lu \n", populacao2);
+    printf ("Area 02: %.2f km²\n", area2);
+    printf ("PIB 02: %.2f bilhoes\n", PIB2);
     printf ("Ponto turistico 02: %d \n", pontoturistico2);
-    printf("Densidade populaciona é: %2.f hab/km \n ", densidade2 );
-    printf ("PIB percapita é: %2.f reais\n", percapita2);
+    printf("Densidade populaciona é: %.2f hab/km \n ", densidade2 );
+    printf ("PIB percapita é: %.2f reais\n", percapita2);
 
     // resultado super poder
     printf("\nSuper Poder Cidade 1: %.2f", superpoder1);
