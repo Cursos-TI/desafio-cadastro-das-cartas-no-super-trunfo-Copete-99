@@ -7,7 +7,7 @@ int main() {
     float PIB1, PIB2;
     float densidade1, densidade2;
     float percapita1, percapita2;
-    int populacao1, populacao2;
+    float populacao1, populacao2;
     int pontoturistico1, pontoturistico2;
     float area1, area2;
     char estado1[10];
@@ -62,9 +62,26 @@ int main() {
     
     densidade1 = populacao1 / area1;
     densidade2 = populacao2 / area2;
-    percapita1 = (PIB1 * 1000000000)  / populacao1;
-    percapita2 = (PIB2 * 1000000000) / populacao2;
+    percapita1 = PIB1 / populacao1;
+    percapita2 = PIB2  / populacao2;
 
+    superpoder1 = populacao1
+                + area1
+                + PIB1
+                + pontoturistico1
+                + percapita1
+                + (1.f/densidade1);
+                
+    superpoder2 = populacao2
+                + area2
+                + PIB2
+                + pontoturistico2
+                + percapita2
+                + (1.f/densidade2);
+
+
+
+        
     
 
     printf("\n --- Dados da carta: ---\n");
@@ -92,6 +109,24 @@ int main() {
     printf("Densidade populaciona é: %2.f hab/km \n ", densidade2 );
     printf ("PIB percapita é: %2.f reais\n", percapita2);
   
+    printf("Cidade 1: %s | Super Poder: %.2f\n", cidade1, superpoder1);
+    printf("Cidade 2: %s | Super Poder: %.2f\n", cidade2, superpoder2);
+
+    printf("\nComparacao de Cartas:\n");
+    printf("Populacao: Carta %d venceu (%d)\n", compararMaior(carta1.populacao, carta2.populacao) ? 1 : 2,
+           compararMaior(carta1.populacao, carta2.populacao));
+    printf("Area: Carta %d venceu (%d)\n", compararMaior(carta1.area, carta2.area) ? 1 : 2,
+           compararMaior(carta1.area, carta2.area));
+    printf("PIB: Carta %d venceu (%d)\n", compararMaior(carta1.PIB, carta2.PIB) ? 1 : 2,
+           compararMaior(carta1.PIB, carta2.PIB));
+    printf("Pontos Turisticos: Carta %d venceu (%d)\n", compararMaior(carta1.pontosTuristicos, carta2.pontosTuristicos) ? 1 : 2,
+           compararMaior(carta1.pontosTuristicos, carta2.pontosTuristicos));
+    printf("Densidade Populacional: Carta %d venceu (%d)\n", compararMenor(carta1.densidadePopulacional, carta2.densidadePopulacional) ? 1 : 2,
+           compararMenor(carta1.densidadePopulacional, carta2.densidadePopulacional));
+    printf("PIB per Capita: Carta %d venceu (%d)\n", compararMaior(carta1.PIBperCapita, carta2.PIBperCapita) ? 1 : 2,
+           compararMaior(carta1.PIBperCapita, carta2.PIBperCapita));
+    printf("Super Poder: Carta %d venceu (%d)\n", compararMaior(carta1.superPoder, carta2.superPoder) ? 1 : 2,
+           compararMaior(carta1.superPoder, carta2.superPoder));
 
     
     
