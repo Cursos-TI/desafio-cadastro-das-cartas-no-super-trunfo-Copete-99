@@ -72,6 +72,11 @@ int main() {
     percapita1 = (PIB1 * 1e9f)/ (float) populacao1;
     percapita2 = (PIB2 * 1e9f) / (float) populacao2;
 
+    // fazendo a soma para mostrar poder da carta
+    superpoder1 = populacao1 + area1 + PIB1 + pontoturistico1 + densidade1 + percapita1;
+    superpoder2 = populacao2 + area2 + PIB2 + pontoturistico2 + densidade2 + percapita2;
+
+
     
     //dados das cartas
     printf("\n --- Dados da carta: ---\n");
@@ -99,10 +104,13 @@ int main() {
     printf("Densidade populaciona é: %.2f hab/km \n ", densidade2 );
     printf ("PIB percapita é: %.2f reais\n", percapita2);
 
+   
     // resultado super poder
-    printf("\nSuper Poder Cidade 1: %.2f", superpoder1);
-    printf("\nSuper Poder Cidade 2: %.2f", superpoder2);
+    printf("Superpoder Carta 1: %d\n", superpoder1);
+    printf("Superpoder Carta 2: %d\n", superpoder2);
 
+  
+  
     //comparações
     printf("\nComparacao de Cartas:\n");
 
@@ -134,6 +142,11 @@ int main() {
     printf("Super Poder: Carta %d venceu (%d)\n",
            (superpoder1 > superpoder2) ? 1 : 2,
            (superpoder1 > superpoder2) ? 1 : 0);
+
+
+
+
+     
 
     
   
