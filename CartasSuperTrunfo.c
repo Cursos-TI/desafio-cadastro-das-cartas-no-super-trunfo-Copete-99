@@ -21,7 +21,7 @@ int main() {
 
 
     
-    //recebendo dados
+    //recebendo dados das cartas
     printf ("Desafio Super Trunfo!\n ");
     
     printf ("Digite o estado 01:\n");
