@@ -145,6 +145,11 @@ int main() {
     printf("Super Poder: Carta %d venceu (%d)\n",
            (superpoder1 > superpoder2) ? 1 : 2,
            (superpoder1 > superpoder2) ? 1 : 0);
+    
+     printf("poder das cartas!");
+
+
+
 
 
 
