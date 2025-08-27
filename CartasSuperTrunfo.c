@@ -155,6 +155,8 @@ int main() {
        printf("Carta 02 venceu!\n");
     }
 
+    printf("carlao di grao");
+    scanf("?")
 
 
 
