@@ -1,4 +1,3 @@
-desenvolvendomaster
 #include <stdio.h>
 
 
@@ -157,7 +156,7 @@ int main() {
     }
 
     printf("carlao di grao");
-    scanf("?")
+    prinf("eu soi mejor");
 
 
 
