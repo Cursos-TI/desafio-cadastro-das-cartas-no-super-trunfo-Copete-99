@@ -11,9 +11,12 @@ int main() {
     float area1, area2;
     char estado1[10], estado2[10]; 
     char codigo1 [4], codigo2 [4];
-
     float superpoder1, superpoder2;
     int resultadoA, resultadoB;
+    float ataque1, ataque2;
+
+
+    
 
     
     
@@ -146,7 +149,11 @@ int main() {
            (superpoder1 > superpoder2) ? 1 : 2,
            (superpoder1 > superpoder2) ? 1 : 0);
     
-     printf("poder das cartas!");
+    if (ataque1 > ateque2){
+       printf("Carta 01 venceu!\n");
+    }else{
+       printf("Carta 02 venceu!\n");
+    }
 
 
 
