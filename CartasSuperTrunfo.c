@@ -156,7 +156,7 @@ int main() {
     }
 
     printf("carlao di grao");
-    prinf("eu soi mejor");
+    
 
 
 
